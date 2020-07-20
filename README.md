@@ -20,7 +20,8 @@ cd
 ```
 
 ## Get the .zshrc config
-```curl -O https://raw.githubusercontent.com/clegault/dotfiles/master/.zshrc
+```
+curl -O https://raw.githubusercontent.com/clegault/dotfiles/master/.zshrc
 exec zsh
 ```
 
