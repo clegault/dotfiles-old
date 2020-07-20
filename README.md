@@ -20,7 +20,10 @@ cd
 ```
 
 ## install grc
-`sudo apt install grc`
+```
+sudo apt install grc
+brew install grc
+```
 
 ## Get the .zshrc config
 ```
