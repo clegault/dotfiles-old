@@ -1,3 +1,9 @@
+## automatic install
+This requires that you enter your password a copule of times but it performs everything below.
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/clegault/dotfiles/master/install.sh)"
+```
+
 ## Install Zsh and change your shell for your user:
 ```
 sudo apt install zsh
