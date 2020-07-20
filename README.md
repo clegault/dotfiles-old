@@ -28,3 +28,6 @@ exec zsh
 ```sudo apt install build-essential ruby ruby-dev
 sudo gem install colorls
 ```
+
+## Install nerdfonts
+install https://www.nerdfonts.com/ (Menlo)
