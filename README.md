@@ -19,6 +19,9 @@ ln -s zsh-syntax-highlighting-filetypes.zsh zsh-syntax-highlighting-filetypes.pl
 cd
 ```
 
+## install grc
+`sudo apt install grc`
+
 ## Get the .zshrc config
 ```
 curl -O https://raw.githubusercontent.com/clegault/dotfiles/master/.zshrc
