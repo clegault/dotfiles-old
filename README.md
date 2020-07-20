@@ -1,5 +1,6 @@
 ## Install Zsh and change your shell for your user:
-```sudo apt install zsh
+```
+sudo apt install zsh
 sudo chsh $USER -s /usr/bin/zsh
 exec zsh
 ```
@@ -7,7 +8,8 @@ exec zsh
 `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
 ## Install plugins
-```git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+```
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -32,7 +34,8 @@ exec zsh
 ```
 
 ## Install colorls
-```sudo apt install build-essential ruby ruby-dev
+```
+sudo apt install build-essential ruby ruby-dev
 sudo gem install colorls
 ```
 
