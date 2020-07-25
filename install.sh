@@ -18,5 +18,5 @@ sudo apt install -y build-essential ruby ruby-dev
 sudo apt install -y grc
 sudo gem install colorls
 curl -O https://raw.githubusercontent.com/clegault/dotfiles/master/.zshrc
-chsh -s /usr/bin/zsh
+sudo chsh -s /usr/bin/zsh $USER
 exec zsh
