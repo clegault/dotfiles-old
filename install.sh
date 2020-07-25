@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt update
 sudo apt install -y zsh
 export CHSH=no
 export RUNZSH=no
