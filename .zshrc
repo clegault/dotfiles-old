@@ -178,5 +178,5 @@ bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
 HIST_STAMPS="mm/dd/yyyy"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
+DISABLE_LS_COLORS="true"
 source $ZSH/oh-my-zsh.sh
