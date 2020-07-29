@@ -158,10 +158,9 @@ esac
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# REVISIT THIS CONFIG
-#export GPG_TTY="$(tty)"
-#export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-#gpgconf --launch gpg-agent
+export GPG_TTY="$(tty)"
+export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+[ -d "~/.gnupg" ] && gpgconf --launch gpg-agent
 
 # SPACESHIP_PROMPT_ADD_NEWLINE="true"
 # SPACESHIP_CHAR_SYMBOL=" \uf0e7"
@@ -172,8 +171,11 @@ esac
 # SPACESHIP_PROMPT_FIRST_PREFIX_SHOW="true"
 # SPACESHIP_USER_SHOW="true"
 ENABLE_CORRECTION="false"
-alias ls='colorls --dark --sort-dirs --report'
-alias lc='colorls --tree --dark'
+if colorls_loc="$(type -p "colorls")" || [[ -z $colorls_loc ]]; then                          0.12   ✔   10:52  �  29.07.20 
+  alias ls='colorls --dark --sort-dirs --report'
+  alias lc='colorls --tree --dark'
+  DISABLE_LS_COLORS="true"  
+fi
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 autoload -U compinit && compinit
@@ -181,5 +183,5 @@ bindkey '\e[A' history-beginning-search-backward
 bindkey '\e[B' history-beginning-search-forward
 HIST_STAMPS="mm/dd/yyyy"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-DISABLE_LS_COLORS="true"
+
 source $ZSH/oh-my-zsh.sh
