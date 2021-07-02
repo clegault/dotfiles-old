@@ -1,5 +1,5 @@
 ## automatic install
-This requires that you enter your password a copule of times but it performs everything below.
+This requires that you enter your password a couple of times but it performs everything below.
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/clegault/dotfiles/master/install.sh)"
 ```
