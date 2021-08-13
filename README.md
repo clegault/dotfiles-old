@@ -1,3 +1,6 @@
+# **NOTE**
+This project has been archived in leu of a replacement dotfiles repo: https://github.com/clegault/dotfiles
+
 ## automatic install
 This requires that you enter your password a couple of times but it performs everything below.
 ```
